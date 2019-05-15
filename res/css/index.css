@@ -1,0 +1,104 @@
+
+.btn, .btn2 {
+    cursor: pointer;
+    width: 90%;
+    margin-left: 10%;
+    margin-top: 10px;
+    height: 60px;
+    font-size: 25px;
+    text-align: center;
+    line-height: 60px;
+    color: rgba(255, 255, 255, 0.9);
+    border-radius: 50px;
+    background: linear-gradient(-45deg, #FFA63D, #FF3D77, #338AFF, #3CF0C5);
+    background-size: 600%;
+    animation: anime 16s linear infinite;
+}
+
+.btn2 {
+    position: absolute;
+    margin-top: -90px;
+    z-index: -1;
+    filter: blur(30px);
+    opacity: 0.8;
+}
+
+@keyframes anime {
+
+    0% {
+        background-position: 0 50%;
+    }
+    50% {
+
+        background-position: 100% 50%;
+
+    }
+    100% {
+        background-position: 0 50%
+
+    }
+
+}
+
+body {
+    width: 80%;
+    margin: 0 ;
+    padding: 0 5%;
+    font-size: 100%;
+    color: #eee9dc;
+    background: #48b379;
+}
+h2 {
+    margin: 10px 0 0 0;
+    font-size: 1.5em;
+    letter-spacing: 2px;
+
+}
+#timeline {
+    list-style: none;
+    margin: 50px 0 30px 5px;
+    padding-left: 30px;
+    border-left: 8px solid #eee9dc;
+}
+#timeline li {
+    margin: 40px 0;
+    position: relative;
+}
+#timeline p {
+    margin: 0 0 5px;
+}
+
+.circle {
+    margin-top: -10px;
+    top: 50%;
+    left: -44px;
+    width: 10px;
+    height: 10px;
+    background: #48b379;
+    border: 5px solid #eee9dc;
+    border-radius: 50%;
+    display: block;
+    position: absolute;
+}
+
+.content {
+    width: 100%;
+
+    padding: 10px 10px 10px;
+    background: #fff;
+    overflow: hidden;
+    border-radius: 0.5em;
+    position: relative;
+
+}
+.content p {
+    width: 100%;
+    overflow: hidden;
+    color: #48b379!important;
+}
+.radio {
+    display: none;
+}
+
+
+
